@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  min-height: 600px;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%; 
+}
+.content-container{
+  display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: nowrap;
+}
+.content-container .swot{
+  width: 100%;
+}
+.content-container .swot:nth-child(1){
+  flex: 1;
+}
+
+.content-container .swot:nth-child(2){
+  flex: 3;
+}
+
+.content-container .swot:nth-child(3){
+  flex: 1;
+}
+
+
+.swot {
+  justify-content: center;
+  display: flex;
+  border-color: blue;
+  border-style: groove;
+  margin: 1px;
+  height: 120px;
+  align-items: center;
+}

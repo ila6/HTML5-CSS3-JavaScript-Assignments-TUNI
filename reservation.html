@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form> 
+        <h1> Welcome to Best Cruises - Book A Cruise&#8482;!</h1>
+        <label for="from-selection"> From :  <br>
+        <select name="selection" id="from-selection"> <!-- for is always equal to select's id-->
+            <option value="Helsinki" id="from-helsinki"> Helsinki </option>
+            <option value="Turku" id="from-turku">Turku</option>
+            <option value="Vaasa" id="from-vaasa">Vaasa</option>
+            <option value="Tallinna" id="from-tallinna">Tallinna</option>
+        </select> </label> <br> <br>
+        <label for="to-selection"> To :  <br> <!-- for is always equal to select's id-->
+        <select name="select" id="to-selection">
+            <option value="Helsinki" id="to-helsinki"> Helsinki </option>
+            <option value="Turku" id="to-turku">Turku</option>
+            <option value="Vaasa" id="to-vaasa">Vaasa</option>
+            <option value="Tallinna" id="to-tallinna">Tallinna</option>
+        </select> </label> <br> <br>
+        <label for="customer-name"> Customer Name :  <br> <!--for and id should same -->
+        <input type="text" id="customer-name" name="name" required> </label> <br> <br> <!--label tag closes after input-->
+        <label for="customer-email"> Email :  <br>
+        <input type="email" id="customer-email" name="em" required> </label> <br> <br>
+        <label for="number-of-adults"> Number of adults :  <br>
+        <input type="number" id="number-of-adults" name="num" min="1" max="99" required> </label> <br> <br>
+        <label for="number-of-children"> Number of children :  <br>
+        <input type="number" id="number-of-children" name="children" min="0" max="99" required> </label> <br> <br>
+        <label for="departure-date"> Departure Date :  <br>
+        <input type="date" id="departure-date" name="departure" required>  </label> <br> <br>
+        <label for="vehicle"> Travelling with a vehicle : <br> 
+        <input type="checkbox" id="vehicle" name="check"> </label>  <br> <br>
+        <button type="submit" id="submit"> Submit </button>    
+    </form>
+</body>
+</html>
